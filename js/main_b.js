@@ -13,3 +13,27 @@
 // function ends
 
 // make an event listener which calls upload function when the form is submitted
+
+const upload = () => {
+  const message = document.getElementById('message');
+  message.innerHTML = 'Uploading...'
+
+  const input = document.querySelector('input[type="file"]');
+  const data = new FormData();
+
+  data.append('fileToUpload', input.files[0]);
+
+  const settings = {
+          method: 'POST',
+          body: data
+      };
+
+  fetch('server/upload/route', settings)
+  .then((response) => {
+      return response.text();
+  }).then((text) => {
+    message.innerHTML = text
+  }).catch((err) => {
+    message.innerHTML = "an error has occured"
+  });
+}
