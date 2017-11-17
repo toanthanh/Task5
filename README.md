@@ -2,7 +2,7 @@
 
 ## Start
 1. Load and extract this repo as a ZIP https://github.com/ilkkamtk/BCW3
-* save to WEB-INF to test in browser
+  * save to WEB-INF to test in browser
 
 ## 1. It's 90's again
 
