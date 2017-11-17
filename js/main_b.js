@@ -16,7 +16,7 @@
 
 const upload = () => {
   const message = document.getElementById('message');
-  message.innerHTML = 'Uploading...'
+  message.innerHTML = 'Upload in progress...'
 
   const input = document.querySelector('input[type="file"]');
   const data = new FormData();
