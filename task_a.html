@@ -17,9 +17,9 @@
 
 <body>
 
-    <form>
-        <input>
-        <input>
+    <form action="server/upload/route" method="post" enctype="multipart/form-data">
+        <input type="file" name="picture" accept="image/*">
+        <input type="submit" value="Upload Image" name="submit">
     </form>
 
     <script src="js/main.js"></script>
